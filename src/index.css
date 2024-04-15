@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+h1 {
+  color: #f1356d;
+}
+#blog {
+  max-width: 800px;
+  margin: 40px;
+  overflow-y: scroll;
+  max-height: 800px;
+}
+
+.blog-card {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-card:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.blog-card h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+.new-blog {
+  margin: 10px;
+  background-color: #f1356d;
+  padding: 7px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.own-data {
+  margin: 40px 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track */
+  height: 10px; /* height of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the handle */
+  height: 50px; /* height of the handle */
+}
+.form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+  /* max-width: 500px; */
+}
+.form input {
+  width: 90%;
+  margin: 20px;
+  padding: 10px;
+}
+.form-submit {
+  margin: 10px;
+  background-color: #f1356d;
+  padding: 10px;
+  width: 90%;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.back-button {
+  font-size: 18px;
+  border-bottom: 2px solid #333;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  cursor: pointer;
+  float: left;
+}
+
+.blog-view {
+  max-width: 600px;
+  height: 800px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.blog-about {
+  margin-top: 30px;
+}
