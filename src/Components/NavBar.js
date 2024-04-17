@@ -4,6 +4,9 @@ function NavBar() {
   function handleNewForm() {
     navigateTo("/form", { replace: true });
   }
+  function handleProfile() {
+    navigateTo("/myaccount", { replace: true });
+  }
   return (
     <>
       <header>
@@ -14,7 +17,7 @@ function NavBar() {
           <button className="new-blog" onClick={handleNewForm}>
             New Blog
           </button>
-          <a>Your Profile</a>
+          <a onClick={handleProfile}>Your Profile</a>
         </div>
       </header>
     </>

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Backbutton from "../Components/Backbutton";
 function Form() {
-  const navigateTo = useNavigate();
   return (
     <>
       <form className="form">
