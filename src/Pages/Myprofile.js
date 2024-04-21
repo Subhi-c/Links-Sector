@@ -1,6 +1,7 @@
 import Mydata from "../Components/Mydata";
 import { useLocation } from "react-router-dom";
 import userData from "../Data/owndata.json";
+import OwnData from "../Components/OwnData";
 function Myprofile() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -11,6 +12,9 @@ function Myprofile() {
       <div className="my-profile">
         <div className="avatar">
           <Mydata userData={userPost} />
+        </div>
+        <div className="myblogs">
+          <OwnData />
         </div>
       </div>
     </>

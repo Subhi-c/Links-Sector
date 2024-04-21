@@ -54,7 +54,8 @@ h1 {
   margin-bottom: 8px;
 }
 
-.new-blog {
+.new-blog,
+.edit-profile {
   margin: 10px;
   background-color: #f1356d;
   padding: 7px;
@@ -130,4 +131,13 @@ h1 {
 
 a {
   cursor: pointer;
+}
+
+.my-profile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 600px;
+  height: 80vh;
 }
