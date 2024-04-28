@@ -5,7 +5,7 @@ function NavBar() {
     navigateTo("/form", { replace: true });
   }
   function handleProfile() {
-    navigateTo("/myaccount", { replace: true });
+    navigateTo(`/myaccount?id=${1}`, { replace: true });
   }
   return (
     <>
