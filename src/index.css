@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-
+:root {
+  --primarycolor: #f1356d;
+  --secondarycolor: #333;
+}
 #root {
   display: flex;
   align-items: center;
@@ -30,7 +33,7 @@ header {
   margin: 20px;
 }
 h1 {
-  color: #f1356d;
+  color: var(--secondarycolor);
 }
 #blog {
   max-width: 800px;
@@ -50,13 +53,14 @@ h1 {
 }
 .blog-card h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: var(--secondarycolor);
   margin-bottom: 8px;
 }
 
-.new-blog {
+.new-blog,
+.edit-profile {
   margin: 10px;
-  background-color: #f1356d;
+  background-color: var(--primarycolor);
   padding: 7px;
   border: none;
   border-radius: 3px;
@@ -93,7 +97,7 @@ h1 {
 }
 .form-submit {
   margin: 10px;
-  background-color: #f1356d;
+  background-color: var(--primarycolor);
   padding: 10px;
   width: 90%;
   border: none;
@@ -130,4 +134,20 @@ h1 {
 
 a {
   cursor: pointer;
+}
+
+.my-profile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 600px;
+  height: 80vh;
+}
+
+.EditProfile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
 }
